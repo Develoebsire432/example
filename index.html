@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home page</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Add the following CSS styles -->
+  <style>
+    .social-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-links a {
+      margin: 0 5px;
+    }
+
+    .social-links img {
+      width: 30px; /* Adjust the size as needed */
+      height: 30px; /* Adjust the size as needed */
+    }
+
+    /* Add a class to style the email message */
+    .email-message {
+      display: none;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+  </style>
+
+  <!-- Add the following JavaScript -->
+  <script>
+    function showEmailMessage() {
+      var emailMessage = document.getElementById('email-message');
+      emailMessage.style.display = 'inline';
+    }
+  </script>
+</head>
+<body>
+  <!-- Your existing HTML code -->
+  <nav>
+    <a href="cont.html">Contact Me</a>
+    <a href="proj.html">Projects</a>
+    <a href="info.html">More Info</a>
+  </nav>
+  <main>
+    <img src="Avatar.jpg" alt="Name" class="profile-image">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello, I am [Your Name]. I am a passionate [Your Profession].</p>
+    
+    <!-- Add the Instagram, Twitter, and Gmail logos with links -->
+    <div class="social-links">
+      <a href="#" target="_blank"><img src="Instagram.png" alt="Instagram"></a>
+      <a href="#" target="_blank"><img src="Twitter.png" alt="Twitter"></a>
+      <a href="#" target="_blank" onclick="showEmailMessage()"><img src="Gmail.png" alt="Gmail"></a>
+      <span class="email-message" id="email-message">your.email@example.com</span>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
